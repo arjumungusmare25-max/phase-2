@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(213, 210, 222);
+    font-weight: bold;
+    text-align: center; /* work Horizontaly*/
+    background-repeat: no-repeat;
+    background-image: url("5632053.jpg");
+    background-size: cover;
+    display: grid;
+}
+
+header {
+    background-color: #0f1111;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nevigation menu */
+.navbar {
+    display: flex;
+    align-items: center; /* work Verticaly */ 
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(10, 141, 241);
+}
+
+li {
+    list-style-type: none; 
+}
+
+h1 {
+    font-size: 3cap;
+}
+
+h2 {
+    color: aqua;
+    font-size: 3cap;
+    margin-top: 2vh;
+}
+
+h3 {
+    font-size: 2cap;
+    color: rgb(125, 187, 245);
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 2cap;
+    color: aliceblue;
+    margin-bottom: 5vh;
+}
+
+p {
+    font-style: italic;
+}
+
+/* wellcome image */
+.welcome {
+    width: 40vh;
+    height: 20vh;
+    border-radius: 0%;
+    border: 5% solid;
+}
+
+/* my image */
+img {
+    width: 40vh;
+    height: 40vh;
+    margin-top: 2vh;
+    border-radius: 50%;
+    border: 5px solid ;
+    object-fit: cover;
+}
+
+#hole{
+    display: flex;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    justify-content: space-evenly;
+}
+
+/* image skill hobbies and goal */
+.image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid;
+}
+
+form {
+    margin: auto;
+}
+
+label {
+    color: rgb(129, 244, 244);
+    display: block;
+}
+
+textarea {
+    width: 30vh;
+    height: 8vh;
+}
+
+button {
+    background-color: #0f1111;
+    color: white;
+    padding: 1px 20px;
+    border-radius: 2vh;
+    border: solid;
+    cursor:  pointer;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+/* table caption */
+caption {
+    margin-top: 2cap;
+    margin-bottom: 2cap;
+    color: aqua;
+}
+
+table {
+    width: 40%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+/* table header */
+th {
+    color: rgb(101, 8, 252);
+    border:  solid white;
+}
+
+/* table and table data */
+table, td {
+    border:  solid white; 
+}
+
+footer {
+    background-color: #0f1111;
+    margin-top: 20vh;
+    padding: 2vh;
+    border: 2px solid white; 
+    font-style: italic;
+}
+
+.contact{
+    margin-top: 30vh;
+}
+
+/* Mobile devices (max-width 768px) */
+@media (max-width: 768px) {
+  
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .navbar ul {
+    flex-direction: column; 
+    gap: 15px;
+    text-align: center;
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 5vw;
+  }
+
+  #hole {
+    flex-direction: column; 
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    gap: 20px;
+  }
+
+  img, .welcome, .image {
+    width: 30vw;
+    height: auto;
+  }
+
+  form {
+    width: 90%; 
+    margin: auto;
+  }
+
+  textarea {
+    width: 80%;
+    height: 8vh;
+  }
+
+  table {
+    width: 90%; 
+    font-size: 12px;
+  }
+
+  button {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 3vh;
+    margin-top: 10vh;
+  }
+}
+
+/*  small devices (max-width 480px) */
+@media (max-width: 480px) {
+
+  header {
+    padding: 10px;
+  }
+
+  .navbar ul {
+    gap: 10px;
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 6vw;
+  }
+
+  #hole {
+    gap: 15px;
+  }
+
+  img, .welcome, .image {
+    width: 80%;
+    height: auto;
+  }
+
+  textarea {
+    width: 90%;
+  }
+
+  table {
+    font-size: 10px;
+  }
+
+  button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
